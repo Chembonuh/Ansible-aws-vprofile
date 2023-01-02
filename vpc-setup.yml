@@ -1,5 +1,5 @@
 - hosts: localhost
-  gather_facts: false
+  gather_facts: true
   connection: local
   tasks:
     - name: import vpc variables

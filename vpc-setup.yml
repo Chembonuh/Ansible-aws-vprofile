@@ -3,7 +3,7 @@
   connection: local
   tasks:
     - name: import vpc variables
-      include_vars: vars/vpc-setup
+      include_vars: vars/vpc_setup
 
 
     - name: create vprofile vpc

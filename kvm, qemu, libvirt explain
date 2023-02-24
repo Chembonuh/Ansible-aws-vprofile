@@ -1,0 +1,11 @@
+QEMU, libvirt, and KVM are three open-source technologies commonly used in virtualization. They each play a role in the virtualization process and work together to provide a complete virtualization solution.
+
+KVM (Kernel-based Virtual Machine) is a Linux kernel module that provides hardware virtualization support. It allows multiple virtual machines (VMs) to run on a single physical host, with each VM running its own operating system.
+
+QEMU (Quick EMUlator) is a user-space emulator that can emulate a complete hardware environment, including CPU, memory, storage, and network interfaces. It is used to provide a virtual machine with the necessary hardware resources to run an operating system. QEMU is often used in conjunction with KVM to provide hardware virtualization support.
+
+Libvirt is a toolkit that provides a common interface for managing different virtualization technologies, including KVM and QEMU. It abstracts the underlying virtualization technologies, providing a common API for managing virtual machines, storage, and network resources. Libvirt provides an easy-to-use interface for creating, starting, stopping, and managing virtual machines. It also provides support for live migration of virtual machines between physical hosts.
+
+In a typical virtualization setup, KVM is used to provide hardware virtualization support, while QEMU provides the necessary hardware resources to the virtual machine. Libvirt sits on top of these technologies, providing a high-level API for managing virtual machines, storage, and network resources. This allows administrators to manage virtual machines from a single location, regardless of the underlying virtualization technology being used.
+
+Overall, QEMU, libvirt, and KVM work together to provide a complete virtualization solution. KVM provides hardware virtualization support, QEMU provides hardware resources to the virtual machine, and libvirt provides a common API for managing virtual machines, storage, and network resources.

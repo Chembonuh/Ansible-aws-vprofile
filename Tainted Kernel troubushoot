@@ -1,0 +1,16 @@
+error message.
+A kernel problem occurred, but your kernel has been tainted (flags:GW). Explanation:W - Taint on warning.Kernel maintainers are unable to diagnose tainted reports.
+
+
+
+Determining the taint status of a running kernel.
+
+The taint status of a running kernel can be determined by running
+
+cat /proc/sys/kernel/tainted
+
+When the output is 0, the kernel is not tainted, when the output is non-zero, the kernel is tainted.
+
+The value will be a combined number of all applying kernel taint flags added (ORed) together. You can find a list of currently used kernel flags under:
+
+/usr/src/linux/Documentation/sysctl/kernel.txt

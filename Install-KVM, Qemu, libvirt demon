@@ -1,0 +1,18 @@
+
+
+
+Install and enable KVm, Qemu, libvert on Fedora workstation 37
+
+
+$ dnf -y install qemu-kvm libvirt virt-install
+
+# check if the modules have been uploaded.
+$ lsmod | grep kvm
+Next
+# start and enable Libvertd daemon
+$  sudo systemctl start libvertd daemon
+$  sudo systemctl enable libvirtd
+$  sudo systemctl status libvirtd
+
+# Configure Bridge networking for KVM virtual machines
+ 
